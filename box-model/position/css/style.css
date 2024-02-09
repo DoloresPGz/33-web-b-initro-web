@@ -1,0 +1,153 @@
+/*--------------ESTILOS AUXILIARES DEL EJERCICIO---------------------*/
+h1{
+    text-align: center;
+}
+
+/*Selecciono dos selectores diferentes, h2 y h3*/
+h2, h3{
+    color: white;
+}
+
+h2{
+   height: 40px;
+   margin: auto;
+   text-align: center;
+}
+
+h3{
+    width: 30%;
+}
+
+section{
+    margin-top: 30px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Alínea todos los divs de mandera horizontal al centro de sus contenedores*/
+div{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.morado{
+    background-color: #8a2be2;
+}
+
+.verde{
+    background-color: #008000;
+}
+
+.azul{
+    background-color: #3a3af6;
+}
+
+.amarillo{
+    background-color: #8f8f03;
+}
+
+.naranja{
+    background-color: #a26900;
+}
+
+.padre{
+    width: 350px;
+    height: 150px;
+    padding: 30px;
+}
+
+.hijo{
+    width: 100px;
+    height: 100px;
+    border-color: black;
+    border-style: solid;
+    border-width: 4px;
+    /*Me sirven para desplegar los cubos hijos en posición horizontal*/
+    display:inline-block;
+    padding: 0.1px;
+}
+
+.nieto{
+    width: 50px;
+    height: 50px;
+    border-color: black;
+    border-style: solid;
+    border-width: 4px;
+    margin-top: 20px;
+    /*Alínean el atributo al centro de su contenedor*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Etiquetas de posición relative que no se usan en los ejemplos*/
+.rel{
+    position: relative;
+}
+
+/*--------------ESTILO DEL EJERCICIO---------------------*/
+
+.static{
+    /* Puedo omitir el valor porque es el que está por defecto en todas las etiquetas */
+    position:static;
+    /* left:100px; */
+    /* right: 100px; */
+    /* top: 100px; */
+    /* bottom: 100px; */
+}
+
+.relative{
+    position:relative;
+    left:100px;
+    /* right: 30px; */
+    top: 100px;
+    /* bottom: 100px; */
+}
+
+/*Vemos diferentes casos de absolute*/
+.absolute-1{
+    position:absolute;
+    left:100px;
+    /* right: 100px; */
+    top: 100px;
+    /* bottom: 100px; */
+}
+
+.absolute-2{
+    position:absolute;
+    left:100px;
+    /* right: 100px; */
+    top: 100px;
+    /* bottom: 100px; */
+}
+
+.absolute-3{
+    position:absolute;
+    left:100px;
+    /* right: 100px; */
+    top: 100px;
+    /* bottom: 100px; */
+}
+
+.fixed{
+    /* position:fixed; */
+    /* left:100px; */
+    /* right: 100px; */
+    top: 100px;
+     /* bottom: 100px;  */
+    
+}
+
+.sticky{
+    position:sticky;
+    top: 20px;
+
+}
+
+/*Para el ejemplo de sticky*/
+.columna{
+    height: 1500px; 
+    margin-bottom: 10000px;
+}
+
+

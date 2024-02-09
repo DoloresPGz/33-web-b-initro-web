@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="titulo">Position</h1>
+
+    <!-- STATIC ---------------------------------------------->
+    <section>
+        <h2 class="morado">Static</h2>
+        <p class="texto">Los atributos de <b class="negrita">top</b>, <b class="negrita">bottom</b>, <b
+                class="negrita">right</b>, <b class="negrita">left</b>y <b class="negrita">z-index</b> no afectan a
+            estas
+            etiquetas.</p>
+        <p class="texto">Es el valor por defecto en todas las etiquetas.</p>
+        <div class="morado padre">
+            <div class="morado hijo"></div>
+            <div class="static morado hijo"></div> <!-- EJEMPLO -->
+            <div class="morado hijo"></div>
+        </div>
+    </section>
+
+    <!-- RELATIVE ---------------------------------------------->
+    <section>
+        <h2 class="verde">Relative</h2>
+        <p class="texto">Toma de referencia la posición de la etiqueta.</p>
+        <div class="morado padre">
+            <div class="morado hijo"></div>
+            <!-- EJEMPLO -->
+            <div class="relative verde hijo"></div> 
+            <div class="morado hijo"></div>
+        </div>
+    </section>
+
+    <!-- ABSOLUTE ---------------------------------------------->
+    <section>
+        <h2 class="azul">Absolute</h2>
+        <h3 class="azul">Caso 1</h3>
+        <p class="texto">Busca el primer padre inmediato que no sea static, sino lo encuentra toma referencia el body.
+            Pierde su espacio html.</p>
+        <div class="morado padre">
+            <div class="morado hijo"></div>
+            <div class="absolute-1 azul hijo"></div> <!-- EJEMPLO -->
+            <div class="morado hijo"></div>
+        </div>
+
+        <h3 class="azul">Caso 2</h3>
+        <p class="texto">Busca el primer padre inmediato que no sea static, si lo encuentra toma de referencia la
+            esquina
+            superior izquierda del padre. El padre debe tener una posición que no sea static.</p>
+        <div class="rel verde padre">
+            <div class="morado hijo"></div>
+            <div class="absolute-2 azul hijo"></div> <!-- EJEMPLO -->
+            <div class="morado hijo"></div>
+        </div>
+
+        <p class="texto">No importa cuántos niveles le tome.</p>
+        <div class="rel verde padre">
+            <div class="morado hijo"></div>
+            <div class="morado hijo">
+                <div class="absolute-3 azul nieto"></div> <!-- EJEMPLO -->
+            </div>
+            <div class="static morado hijo"></div>
+        </div>
+    </section>
+
+    <!-- FIXED ---------------------------------------------->
+    <section>
+        <h2 class="amarillo">Fixed</h2>
+        <p class="texto">Su posición depende del html. Pierde su posición en el html.</p>
+        <div class="morado padre">
+            <div class="morado hijo"></div>
+            <div class="fixed amarillo hijo"></div> <!-- EJEMPLO -->
+            <div class="morado hijo"></div>
+        </div>
+    </section>
+
+    <!-- STICKY ---------------------------------------------->
+    <section>
+        <h2 class="naranja">Sticky</h2>
+        <p class="texto">Su posición depende de la <b class="negrita">posición</b> de la pantalla. Cuando se aplica a un elemento, dicho elemento se comporta como relative dentro de su contenedor hasta que se desplaza fuera de la vista, momento en el cual se fija en su posición como si fuera fixed.</p>
+        <div class="morado padre columna">
+            <div class="morado hijo"></div>
+            <div class="sticky naranja hijo"></div> <!-- EJEMPLO -->
+            <div class="morado hijo"></div>
+        </div>
+    </section>
+
+</body>
+
+</html>

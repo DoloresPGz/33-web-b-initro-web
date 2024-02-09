@@ -1,0 +1,44 @@
+/*--------------ESTILOS AUXILIARES DEL EJERCICIO---------------------*/
+h1{
+    text-align: center;
+}
+
+/*--------------ESTILOS DEL EJERCICIO---------------------*/
+
+.container{
+    position:relative;
+}
+
+.caja{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+}
+
+.caja-1{
+    left: 10px;
+    top: 10px;
+    background-color: rgb(0, 0, 255);
+    z-index: 0;
+}
+
+.caja-2{
+    left: 30px;
+    top: 30px;
+    background-color: rgb(0, 255, 72);
+    z-index: 4;
+}
+
+.caja-3{
+    left: 50px;
+    top: 50px;
+    background-color: rgb(255, 0, 238);
+    z-index: 1;
+}
+
+.caja-4{
+    left: 70px;
+    top: 70px;
+    background-color: rgb(200, 255, 0);
+    z-index: 3;
+}
